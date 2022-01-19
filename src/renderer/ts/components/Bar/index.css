@@ -1,0 +1,54 @@
+.bar {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transform: translateY(1px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+}
+
+.bar .nick {
+    color: black;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.bar .appInfo {
+    display: flex;
+}
+
+.bar .appInfo span{
+    color: rgb(219, 211, 211);
+    font-size: 12px;
+    line-height: 25px;
+}
+.bar img {
+    width: 25px;
+    height: 25px;
+}
+
+.bar .btns {
+    display: flex;
+    -webkit-app-region: no-drag;
+}
+
+.bar .btn {
+    -webkit-app-region: no-drag;
+    background-color: transparent;
+    border: none;
+}
+.bar .btn:hover {
+    cursor: pointer;
+}
+
+.bar .minsize:hover {
+    background-color: rgba(77, 75, 75, 0.5);
+}
+
+.bar .close:hover {
+    background-color: rgb(255,84,57);
+    border-top-right-radius: 4px;
+}

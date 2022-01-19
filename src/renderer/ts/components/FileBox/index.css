@@ -1,0 +1,56 @@
+.fileBoxWrap {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.fileBoxWrap .fileInfoShow {
+    display: flex;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.fileBoxWrap .fileInfoShow .fileIcon {
+    width: 40px;
+}
+
+.fileBoxWrap .fileInfoShow .fileInfo {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.fileBoxWrap .fileInfoShow .fileInfo .tips {
+    margin-top: 3px;
+    color: rgb(136,136,136);
+}
+
+.fileBoxWrap .fileOperator {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin: 5px 10px;
+    color: rgb(18,183,245);
+}
+
+.fileBoxWrap .fileOperator span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fileBoxWrap .fileOperator span {
+    margin-left: 10px;
+}
+
+.fileBoxWrap .fileOperator .delete {
+    color: rgb(136,136,136);
+    text-decoration: line-through;
+}
+
+.fileBoxWrap .fileOperator .delete:hover {
+    cursor: not-allowed;
+    text-decoration: line-through;
+}

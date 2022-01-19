@@ -1,0 +1,151 @@
+.chatWrap {
+    height: 500px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.chatWrap .chatHeader {
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.chatWrap .chatFrame {
+    height: 350px;
+    -webkit-app-region: no-drag;
+    border-bottom: 1px solid rgb(234,234,233);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatWrap .chatFrame .loadingWrap {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(18,183,245);
+}
+
+.chatWrap .chatFrame .loadingWrap .moreContent {
+    font-size: 8px;
+    align-self: center;
+    user-select: none;
+}
+
+.chatWrap .chatFrame .loadingWrap .moreContent:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.chatWrap .chatFrame .loadingWrap .moreContent.noContent {
+    color: gray;
+}
+
+.chatWrap .chatFrame .loadingWrap .moreContent.noContent:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.chatWrap .chatFrame::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatWrap .chatFrame::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+.chatWrap .chatFrame::-webkit-scrollbar-thumb {
+    border-radius: 3px;  
+    background-color: rgb(214,214,213);
+}
+
+.chatWrap .chatFrame::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(177,177,176); 
+}
+
+.chatWrap .operatorFrame {
+    -webkit-app-region: no-drag;
+}
+
+.chatWrap .operatorFrame .operatorBtn {
+    height: 20px;
+    margin: 5px 10px 0;
+    display: flex;
+}
+
+.chatWrap .operatorFrame .operatorBtn div {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.chatWrap .operatorFrame .operatorBtn div:hover {
+    cursor: pointer;
+    background-color: rgb(160, 160, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.chatWrap .operatorFrame .operatorBtn .sendFile img {
+    width: 20px;
+    height: 20px;
+}
+
+.chatWrap .operatorFrame .msgInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px 0;
+    /* background-color: rebeccapurple; */
+}
+
+.chatWrap .operatorFrame .msgInput textarea {
+    outline: none;
+    height: 35px;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+.chatWrap .operatorFrame .msgInput textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatWrap .operatorFrame .msgInput textarea::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+.chatWrap .operatorFrame .msgInput textarea::-webkit-scrollbar-thumb {
+    border-radius: 3px;  
+    background-color: rgb(214,214,213);
+}
+
+.chatWrap .operatorFrame .msgInput textarea::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(177,177,176); 
+}
+
+.chatWrap .operatorFrame .sendMsgBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+    font-size: 12px;
+    -webkit-app-region: drag;
+}
+
+.chatWrap .operatorFrame .sendMsgBtn span {
+    background-color: rgb(197,197,192);
+    padding: 3px 15px;
+    border-radius: 3px;
+    cursor: default;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+.chatWrap .operatorFrame .sendMsgBtn span:hover {
+    background-color: rgb(209,210,205);
+}

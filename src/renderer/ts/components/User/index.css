@@ -1,0 +1,55 @@
+.userItemWrap {
+    height: 50px;
+    display: flex;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    user-select: none;
+    width: calc(100% - 2px);
+    position: relative;
+    align-items: center;
+}
+.userItemWrap:hover {
+    background-color: rgb(243,243,242);
+    cursor: auto;
+}
+
+.userItemWrap .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userItemWrap .userItemContent {
+    margin-left: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userItemWrap .userItemContent .account {
+    color: rgb(155,155,155);
+}
+
+.userItemWrap .userItemContent .nick {
+    color: rgb(255,0,0);
+}
+
+.userItemWrap .redCountTip {
+    width: 15px;
+    height: 15px;
+    /* align-self: flex-end; */
+    background-color: red;
+    visibility: hidden;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
+
+.userItemWrap .redCountTip.haveUnRead {
+    visibility: visible;
+}

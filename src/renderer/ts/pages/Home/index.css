@@ -1,0 +1,81 @@
+.homeWrap {
+    width: 300px;
+    height: 750px;
+    background-color: white;
+    -webkit-app-region: no-drag;
+    border-radius: 4px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+.homeWrap .header {
+    height: 100px;
+    /* background-color: red; */
+    -webkit-app-region: drag;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homeWrap .header .accountInfo {
+    /* height: 100%; */
+    display: flex;
+    padding: 40px 20px 0;
+}
+
+.homeWrap .header .accountInfo .accountNick {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.homeWrap .header .accountInfo .accountAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.homeWrap .friendList {
+    padding: 5px 0;
+    border-top: 1px solid rgb(243,243,242);
+    border-bottom:1px solid rgb(243,243,242);
+    color: rgb(102,109,109);
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    font-size: 14px;
+}
+.homeWrap .userList {
+    width: 100%;
+    margin-bottom: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
+    border-bottom: 1px solid #999;
+}
+
+.homeWrap .userList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.homeWrap .userList::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+.homeWrap .userList::-webkit-scrollbar-thumb {
+    border-radius: 3px;  
+    background-color: rgb(214,214,213);  
+}
+.homeWrap .userList::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(177,177,176); 
+}
+
+
+/* 解决span里面的内容不换行 */
+/* .homeWrap .userList span {
+    
+    word-break:normal;
+    width:auto;
+    display:block;
+    white-space:pre-wrap;
+    word-wrap : break-word;
+    overflow: hidden ;
+} */

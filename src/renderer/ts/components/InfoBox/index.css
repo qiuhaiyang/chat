@@ -1,0 +1,14 @@
+.infoBoxWrap {
+    margin: 5px 0;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.infoBoxWrap .infoheader {
+    font-size: 10px;
+    color: rgb(55,150,253);
+}
+
+.infoBoxWrap .infoheader .time {
+    margin-left: 10px;
+}
